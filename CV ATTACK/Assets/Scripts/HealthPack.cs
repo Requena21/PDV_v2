@@ -15,8 +15,6 @@ public class HealthPack : MonoBehaviour
 
     void PickUp(Collider player)
     {
-        Instantiate(pickupEffect, transform.position, transform.rotation);
-
         Health stats = player.GetComponent<Health>();
         stats.health = 100f;
 
