@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthPack : MonoBehaviour
 {
     public GameObject pickupEffect;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
