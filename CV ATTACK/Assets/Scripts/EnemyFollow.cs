@@ -18,11 +18,13 @@ public class EnemyFollow : MonoBehaviour
     void Update()
     {
         gameObject.GetComponent<NavMeshAgent>().SetDestination(player.transform.position);
-        /*
+        Health stats = player.GetComponent<Health>();
+        
+        
          if(player.transform.position == this.transform.position)
          {
-            player.GetComponent(Health) -= 1;
+            stats.vida -= 1;
          }
-         */
+         
     }
 }

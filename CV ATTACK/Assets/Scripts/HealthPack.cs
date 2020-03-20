@@ -16,7 +16,7 @@ public class HealthPack : MonoBehaviour
     void PickUp(Collider player)
     {
         Health stats = player.GetComponent<Health>();
-        stats.health = 100f;
+        stats.vida = 100f;
 
         Destroy(gameObject);
     }
