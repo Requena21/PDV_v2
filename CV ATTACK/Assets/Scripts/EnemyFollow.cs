@@ -6,7 +6,12 @@ using UnityEngine.AI;
 public class EnemyFollow : MonoBehaviour
 {
     public GameObject player;
-
+    private float dist;
+    private Vector3 posJug;
+    private Vector3 posEne;
+    private int i = 0;
+    public int distanciaDam = 3;
+    public float damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -19,12 +24,23 @@ public class EnemyFollow : MonoBehaviour
     {
         gameObject.GetComponent<NavMeshAgent>().SetDestination(player.transform.position);
         Health stats = player.GetComponent<Health>();
-        
-        
-         if(player.transform.position == this.transform.position)
-         {
-            stats.vida -= 1;
-         }
+        posJug = player.transform.position;
+        posEne = this.transform.position;
+        dist = Vector3.Distance(posJug, posEne);
          
+    }
+    private void FixedUpdate()
+    {
+
+        Health stats = player.GetComponent<Health>();
+        if (dist < distanciaDam)
+        {
+            i++;
+            if (i == 50)
+            {
+                stats.vida -= damage;
+                i = 0;
+            }   
+        }
     }
 }

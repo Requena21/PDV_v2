@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Creator Kit - FPS/Scenes/MyScene.unity
-    guid: a7f90394e806bb049995d853e82116de
+    path: Assets/Scenes/Menu Dificultad.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ExampleScene.unity
-    guid: cf8af1738c3cb4b488b72c399f7898f8
+    path: Assets/Scenes/Mapa1.unity
+    guid: ed00dca73d6166142ae5754490c48e25
+  - enabled: 1
+    path: Assets/Scenes/Mapa2.unity
+    guid: 76f817a7dcf04214799c0ac974b498a2
+  - enabled: 1
+    path: Assets/Scenes/Mapa3.unity
+    guid: b809f77f9ce3f6d4ebf5801dbe8c50eb
   m_configObjects: {}
