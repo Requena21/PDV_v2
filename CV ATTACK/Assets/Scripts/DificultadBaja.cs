@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class DificultadBaja : MonoBehaviour
 {
+
+    
+
     public void JugarNivel1()
     {
+        GameplayController.instance.dificultad = 1;
         SceneManager.LoadScene(1);
     }
 
@@ -14,7 +18,7 @@ public class DificultadBaja : MonoBehaviour
     {
         Debug.Log("Saliste");
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
 
     }
 }

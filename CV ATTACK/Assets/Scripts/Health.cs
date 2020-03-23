@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public float vida = 100f;
+    
 
     private void Update()
     {

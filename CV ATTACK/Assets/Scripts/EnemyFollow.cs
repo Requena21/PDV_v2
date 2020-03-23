@@ -12,6 +12,7 @@ public class EnemyFollow : MonoBehaviour
     private int i = 0;
     public int distanciaDam = 3;
     public float damage = 1;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class EnemyFollow : MonoBehaviour
             i++;
             if (i == 50)
             {
-                stats.vida -= damage;
+                stats.vida -= damage * GameplayController.instance.dificultad;
                 i = 0;
             }   
         }

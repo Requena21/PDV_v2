@@ -7,7 +7,8 @@ public class DificultadAlta : MonoBehaviour
 {
     public void JugarNivel3()
     {
-        SceneManager.LoadScene(3);
+        GameplayController.instance.dificultad = 1.2f;
+        SceneManager.LoadScene(1);
     }
 
 }

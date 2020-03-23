@@ -11,7 +11,9 @@ public class GameplayController : MonoBehaviour
     private AudioSource gemAudio;
 
     public int gems = 0;
-    public Text NGems;
+   // public Text NGems;
+
+    public float dificultad;
     
     void Awake()
     {
@@ -19,12 +21,14 @@ public class GameplayController : MonoBehaviour
 
         gemAudio = GetComponent<AudioSource>();
 
-        NGems.text = gems.ToString();
+       // NGems.text = gems.ToString();
+
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     private void Update()
     {
-        NGems.text = gems.ToString();
+        //NGems.text = gems.ToString();
     }
 
     void MakeSingleton()
